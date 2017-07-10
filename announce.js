@@ -23,7 +23,6 @@ const __NO_PEER_ID = true; //Should seeders not see each others? ( Hint: Should 
 const __ENABLE_SHORT_ANNOUNCE = true; //Should we enable short announces? This allows NATed clients to get updates much faster, but it also takes more load on the server. 
 const __REDIR_BROWSER = ''; //In case someone tries to access the tracker using a browser, redirect to this URL or file
 const __CREDIT_HEADER = 'WebTask Tracker v'+__VERSION; //Feel Free to change credit header
-//function implementation
 
 module.exports = function (context, req, res) {
   if(Object.keys(req.query).length === 0 && req.query.constructor === Object){
